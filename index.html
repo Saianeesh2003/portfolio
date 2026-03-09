@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Aneesh - AI/ML Engineer & Data Scientist</title>
+    <title>Sai Aneesh - AI Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
         .gradient-text {
             background: linear-gradient(to right, #60a5fa, #a78bfa, #ec4899);
             -webkit-background-clip: text;
@@ -24,21 +22,18 @@
         <div class="max-w-6xl mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <h1 class="text-2xl font-bold gradient-text">Sai Aneesh</h1>
-                
                 <div class="hidden md:flex gap-6 items-center">
                     <a href="#about" class="hover:text-blue-400 transition">About</a>
                     <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
                     <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
                     <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
                 </div>
-
                 <button id="mobileMenuBtn" class="md:hidden text-white">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
-
             <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 flex-col gap-4">
                 <a href="#about" class="hover:text-blue-400 transition">About</a>
                 <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
@@ -51,24 +46,22 @@
     <!-- Hero Section -->
     <section id="about" class="pt-32 pb-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-           <h2 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">
-   AI Engineer | ML & GenAI Systems
-</h2>
-
-           <p class="text-xl text-slate-300 mb-8 leading-relaxed">
-AI Engineer with hands-on experience building 
-<span class="text-blue-400 font-semibold">ML and GenAI systems</span>, including 
-<span class="text-purple-400 font-semibold">RAG pipelines</span> and 
-<span class="text-pink-400 font-semibold">agentic workflows</span>.
-Strong foundation in Python, machine learning, and end-to-end system development.
-</p>
-
+            <h2 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">
+                AI Engineer | Agentic Systems & RAG
+            </h2>
+            <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                AI Engineer specializing in 
+                <span class="text-blue-400 font-semibold">multi-agent systems</span> and 
+                <span class="text-purple-400 font-semibold">RAG pipelines</span>.
+                Building production AI applications end-to-end — from prompt to deployment —
+                with a focus on
+                <span class="text-pink-400 font-semibold">real users and measurable outcomes</span>.
+            </p>
             <div class="flex flex-wrap gap-4 justify-center mb-8">
                 <a href="#projects" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition">
                     View Projects
                 </a>
                 <a href="https://github.com/Saianeesh2003/resume/blob/main/resume.pdf?raw=1"
-
                    download
                    class="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition flex items-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,7 +70,6 @@ Strong foundation in Python, machine learning, and end-to-end system development
                     Download Resume
                 </a>
             </div>
-
             <div class="flex gap-6 justify-center text-slate-400">
                 <a href="https://github.com/Saianeesh2003" target="_blank" class="hover:text-white transition">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -94,7 +86,6 @@ Strong foundation in Python, machine learning, and end-to-end system development
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                 </a>
-                
             </div>
         </div>
     </section>
@@ -103,41 +94,72 @@ Strong foundation in Python, machine learning, and end-to-end system development
     <section id="projects" class="py-20 px-4 bg-slate-800/50">
         <div class="max-w-6xl mx-auto">
             <h3 class="text-4xl font-bold mb-12 text-center">Featured Projects</h3>
-            
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-slate-900 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition">
-                    <h4 class="text-2xl font-bold mb-3 text-blue-400">AI Agent Assistant with Tool Calling</h4>
-                    <p class="text-slate-300 mb-4">Developed AI agent using Claude Haiku 4.5 with agentic workflows for autonomous task execution. Integrated custom tools for weather API, file creation, and code generation.</p>
-                    
+
+                <!-- Project 1 - JEE Math Mentor (NEW - FEATURED) -->
+                <div class="bg-slate-900 rounded-xl p-6 border border-blue-500 hover:border-purple-500 transition md:col-span-2">
+                    <div class="flex items-center gap-3 mb-3">
+                        <h4 class="text-2xl font-bold text-blue-400">JEE Math Mentor — Multimodal Multi-Agent AI App</h4>
+                        <span class="px-2 py-1 bg-blue-600 rounded text-xs font-bold">FEATURED</span>
+                    </div>
+                    <p class="text-slate-300 mb-4">End-to-end AI application solving JEE math problems using a 7-node LangGraph pipeline. Supports text, image (OCR), and audio input. Features RAG-grounded solving, Human-in-the-Loop validation, and a MongoDB memory layer that surfaces similar past problems at runtime.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Python</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Streamlit</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">LangGraph</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Claude API</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">LangChain</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Pinecone</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Google Gemini Embeddings</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">EasyOCR</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Whisper</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">MongoDB</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Streamlit</span>
                     </div>
-
-                    <ul class="mb-4 text-sm text-slate-400 space-y-1">
-                        <li>• Real-time task tracking</li>
-                        <li>• Chat history management</li>
-                        <li>• Multiple tool integrations</li>
+                    <ul class="mb-4 text-sm text-slate-400 space-y-1 grid grid-cols-2 gap-1">
+                        <li>• 7-node multi-agent pipeline (Parser → Router → Solver → Verifier → Explainer)</li>
+                        <li>• RAG pipeline with topic-filtered Pinecone retrieval</li>
+                        <li>• Multimodal input: text, image OCR, audio transcription</li>
+                        <li>• Human-in-the-Loop at 3 trigger points</li>
+                        <li>• Memory layer stores & retrieves similar past problems</li>
+                        <li>• Full agent trace visibility in UI</li>
                     </ul>
-
                     <div class="flex gap-4">
-                        <a href="https://ai-agent-assistant-saianeesh.streamlit.app/" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition text-sm">
+                        <a href="https://math-mentor-tgt3duelt4kof6ng7pgkp5.streamlit.app/" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition text-sm">
                             Live Demo →
                         </a>
-                        <a href="https://github.com/Saianeesh2003" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition text-sm">
+                        <a href="https://github.com/Saianeesh2003/math-mentor" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition text-sm">
                             View Code
                         </a>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2 - AI Agent -->
                 <div class="bg-slate-900 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition">
-                    <h4 class="text-2xl font-bold mb-3 text-blue-400">PDF Chat Assistant - RAG System</h4>
-                    <p class="text-slate-300 mb-4">Built RAG system using Qdrant vector database and Google embeddings for semantic document search. Implemented advanced PDF processing pipeline with intelligent chunking.</p>
-                    
+                    <h4 class="text-2xl font-bold mb-3 text-blue-400">AI Agent with Autonomous Tool Calling</h4>
+                    <p class="text-slate-300 mb-4">Production-ready agentic AI system with autonomous tool selection and multi-step execution workflows. Integrated 5+ tools including weather API, file I/O, and code generation.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Claude API</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Streamlit</span>
+                    </div>
+                    <ul class="mb-4 text-sm text-slate-400 space-y-1">
+                        <li>• Autonomous tool selection & orchestration</li>
+                        <li>• Prompt orchestration with fallback strategies</li>
+                        <li>• Shipped to production in under 2 weeks</li>
+                    </ul>
+                    <div class="flex gap-4">
+                        <a href="https://ai-agent-assistant-saianeesh.streamlit.app/" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition text-sm">
+                            Live Demo →
+                        </a>
+                        <a href="https://github.com/Saianeesh2003/agentic-ai-autonomous-system" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition text-sm">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 - RAG System -->
+                <div class="bg-slate-900 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition">
+                    <h4 class="text-2xl font-bold mb-3 text-blue-400">RAG System with Vector Database</h4>
+                    <p class="text-slate-300 mb-4">End-to-end RAG pipeline for semantic document search and context-aware question answering. Full pipeline: PDF processing → chunking → embedding → vector storage → retrieval.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Python</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">LangChain</span>
@@ -145,71 +167,21 @@ Strong foundation in Python, machine learning, and end-to-end system development
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Claude API</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Streamlit</span>
                     </div>
-
                     <ul class="mb-4 text-sm text-slate-400 space-y-1">
-                        <li>• Vector database integration</li>
-                        <li>• Semantic search</li>
-                        <li>• Configurable parameters</li>
+                        <li>• Qdrant vector database integration</li>
+                        <li>• Semantic search with Google embeddings</li>
+                        <li>• Shipped MVP in 12 days</li>
                     </ul>
-
                     <div class="flex gap-4">
                         <a href="https://pdf-chat-assistant-saianeesh.streamlit.app/" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition text-sm">
                             Live Demo →
                         </a>
-                        <a href="https://github.com/Saianeesh2003" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition text-sm">
+                        <a href="https://github.com/Saianeesh2003/rag-system-vector-db" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition text-sm">
                             View Code
                         </a>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="bg-slate-900 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition">
-                    <h4 class="text-2xl font-bold mb-3 text-blue-400">Customer Churn Prediction</h4>
-                    <p class="text-slate-300 mb-4">Built classification models achieving 85%+ accuracy using Logistic Regression, Decision Trees, and Random Forests. Comprehensive EDA and preprocessing pipeline implementation.</p>
-                    
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Python</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Scikit-learn</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Pandas</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Matplotlib</span>
-                    </div>
-
-                    <ul class="mb-4 text-sm text-slate-400 space-y-1">
-                        <li>• 85%+ accuracy</li>
-                        <li>• Multiple ML models</li>
-                        <li>• Full preprocessing pipeline</li>
-                    </ul>
-
-                    <div class="flex gap-4">
-                        <a href="https://github.com/Saianeesh2003/Churn-Prediction-ML" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition text-sm">
-                            View Code
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="bg-slate-900 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition">
-                    <h4 class="text-2xl font-bold mb-3 text-blue-400">Car Sales Dashboard</h4>
-                    <p class="text-slate-300 mb-4">Designed interactive Power BI dashboard analyzing sales trends and revenue distribution with custom DAX measures for business intelligence.</p>
-                    
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Power BI</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Excel</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">DAX</span>
-                    </div>
-
-                    <ul class="mb-4 text-sm text-slate-400 space-y-1">
-                        <li>• Interactive visualizations</li>
-                        <li>• Revenue analytics</li>
-                        <li>• Custom DAX measures</li>
-                    </ul>
-
-                    <div class="flex gap-4">
-                        <a href="https://github.com/Saianeesh2003/car-sales-powerbi" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition text-sm">
-                            View Code
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -218,57 +190,55 @@ Strong foundation in Python, machine learning, and end-to-end system development
     <section id="skills" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
             <h3 class="text-4xl font-bold mb-12 text-center">Technical Skills</h3>
-            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-slate-900 rounded-xl p-6 border border-slate-700">
-                    <h4 class="text-xl font-bold mb-4 text-purple-400">AI & ML</h4>
+                    <h4 class="text-xl font-bold mb-4 text-purple-400">AI & GenAI</h4>
                     <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">LangGraph</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">LangChain</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">RAG Architecture</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">LLM Integration</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Vector Databases</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">RAG Pipelines</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Agentic Workflows</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Tool Calling</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Prompt Engineering</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">LLM Integration</span>
                     </div>
                 </div>
-
                 <div class="bg-slate-900 rounded-xl p-6 border border-slate-700">
-                    <h4 class="text-xl font-bold mb-4 text-purple-400">Machine Learning</h4>
+                    <h4 class="text-xl font-bold mb-4 text-purple-400">Vector Databases & Memory</h4>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Linear/Logistic Regression</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Decision Trees</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Random Forests</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Scikit-learn</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Pinecone</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Qdrant</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">MongoDB</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Google Gemini Embeddings</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Semantic Search</span>
                     </div>
                 </div>
-
                 <div class="bg-slate-900 rounded-xl p-6 border border-slate-700">
                     <h4 class="text-xl font-bold mb-4 text-purple-400">Programming</h4>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Python</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">SQL</span>
-                        
                     </div>
                 </div>
-
                 <div class="bg-slate-900 rounded-xl p-6 border border-slate-700">
-                    <h4 class="text-xl font-bold mb-4 text-purple-400">Data & Visualization</h4>
+                    <h4 class="text-xl font-bold mb-4 text-purple-400">ML Fundamentals</h4>
                     <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Scikit-learn</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Classification</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Regression</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Model Evaluation</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Pandas</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">NumPy</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Matplotlib</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Seaborn</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Power BI</span>
-                       
                     </div>
                 </div>
-
                 <div class="bg-slate-900 rounded-xl p-6 border border-slate-700">
-                    <h4 class="text-xl font-bold mb-4 text-purple-400">Tools</h4>
+                    <h4 class="text-xl font-bold mb-4 text-purple-400">Tools & Infrastructure</h4>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Git</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Streamlit</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">LangSmith</span>
                         <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Jupyter</span>
-                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">MySQL</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-full text-sm">Streamlit Cloud</span>
                     </div>
                 </div>
             </div>
@@ -279,23 +249,25 @@ Strong foundation in Python, machine learning, and end-to-end system development
     <section class="py-20 px-4 bg-slate-800/50">
         <div class="max-w-4xl mx-auto">
             <h3 class="text-4xl font-bold mb-12 text-center">Education & Achievements</h3>
-            
             <div class="bg-slate-900 rounded-xl p-8 border border-slate-700 mb-8">
                 <h4 class="text-2xl font-bold mb-2">Bachelor of Engineering</h4>
                 <p class="text-blue-400 mb-2">Electronics and Communication Engineering</p>
                 <p class="text-slate-400">Osmania University, Hyderabad | GPA: 8.09/10 | July 2025</p>
             </div>
-
             <div class="bg-slate-900 rounded-xl p-8 border border-slate-700">
                 <h4 class="text-2xl font-bold mb-4">Key Achievements</h4>
                 <ul class="space-y-3 text-slate-300">
                     <li class="flex items-start gap-3">
                         <span class="text-xl">🏆</span>
-                        <span>Selected for national-level MeitY Chips-to-Startup (C2S) Program for ADPLL design</span>
+                        <span>Selected for national MeitY Chips-to-Startup (C2S) Program from 10,000+ applicants (Top 0.1%)</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <span class="text-xl">⚡</span>
-                        <span>Designed and simulated UART modules using AMD Vivado as part of C2S program</span>
+                        <span class="text-xl">🔀</span>
+                        <span>Merged PR #184 to Bindu open-source repository — conversational memory agent contribution</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🚀</span>
+                        <span>Built and deployed 3 production AI applications independently, each shipped in under 2 weeks</span>
                     </li>
                 </ul>
             </div>
@@ -306,8 +278,7 @@ Strong foundation in Python, machine learning, and end-to-end system development
     <section id="contact" class="py-20 px-4">
         <div class="max-w-2xl mx-auto text-center">
             <h3 class="text-4xl font-bold mb-6">Let's Connect</h3>
-            <p class="text-slate-300 mb-8">Interested in AI/ML opportunities</p>
-            
+            <p class="text-slate-300 mb-8">Open to AI Engineer roles at startups building real products</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="mailto:gantisaianeesh@gmail.com" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition">
                     Email Me
@@ -321,20 +292,16 @@ Strong foundation in Python, machine learning, and end-to-end system development
 
     <!-- Footer -->
     <footer class="py-8 px-4 border-t border-slate-700 text-center text-slate-400">
-        <p>© By  Sai Aneesh Ganti.</p>
+        <p>© Sai Aneesh Ganti</p>
     </footer>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
-        
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             mobileMenu.classList.toggle('flex');
         });
-
-        // Close mobile menu when clicking a link
         const mobileLinks = mobileMenu.querySelectorAll('a');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -344,9 +311,4 @@ Strong foundation in Python, machine learning, and end-to-end system development
         });
     </script>
 </body>
-
 </html>
-
-
-
-
