@@ -221,9 +221,11 @@
       border-radius: 8px;
       font-size: 13.5px;
       font-weight: 500;
+      font-family: inherit;
       text-decoration: none;
       border: 1px solid var(--border);
       transition: border-color .15s, background .15s;
+      cursor: pointer;
     }
 
     .btn-solid {
@@ -243,6 +245,58 @@
 
     .btn-ghost:hover {
       border-color: var(--muted-2);
+    }
+
+    /* ---------- resume viewer ---------- */
+    .resume-dialog {
+      width: min(1000px, calc(100vw - 32px));
+      height: min(860px, calc(100vh - 32px));
+      padding: 0;
+      color: var(--ink);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .resume-dialog::backdrop {
+      background: rgba(0, 0, 0, .72);
+      backdrop-filter: blur(3px);
+    }
+
+    .resume-dialog-header {
+      height: 54px;
+      padding: 0 14px 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .resume-dialog-header span {
+      font-family: "Sora", "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .resume-close {
+      min-width: 32px;
+      min-height: 32px;
+      color: var(--ink);
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .resume-frame {
+      display: block;
+      width: 100%;
+      height: calc(100% - 54px);
+      border: 0;
+      background: #fff;
     }
 
     /* ---------- panel / section ---------- */
@@ -560,8 +614,7 @@
           <p class="role">AI Engineer specializing in LangGraph pipelines and RAG systems, with hands-on backend experience in REST APIs, PostgreSQL, and JWT auth, taking prototypes to production.</p>
           <div class="hero-links">
             <a class="btn btn-solid" href="#projects">View projects</a>
-            <a class="btn btn-ghost" href="https://github.com/Saianeesh2003/resume/blob/main/Sai_Aneesh_Ganti_Resume.pdf"
-              target="_blank" rel="noopener">View résumé ↗</a>
+            <button class="btn btn-ghost" type="button" data-resume-open>View résumé ↗</button>
           </div>
         </div>
 
@@ -778,6 +831,14 @@
     </div>
   </div>
 
+  <dialog class="resume-dialog" aria-labelledby="resume-title" data-resume-dialog>
+    <div class="resume-dialog-header">
+      <span id="resume-title">Sai Aneesh Ganti — Résumé</span>
+      <button class="resume-close" type="button" aria-label="Close résumé" data-resume-close>×</button>
+    </div>
+    <iframe class="resume-frame" src="Sai_Aneesh_Ganti_Resume.pdf" title="Sai Aneesh Ganti résumé"></iframe>
+  </dialog>
+
   <div class="statusbar">
     <span>⎇ main</span>
     <span class="hide-sm">No problems</span>
@@ -786,6 +847,15 @@
       <span class="hide-sm">UTF-8</span>
     </div>
   </div>
+
+  <script>
+    const resumeDialog = document.querySelector('[data-resume-dialog]');
+    document.querySelector('[data-resume-open]').addEventListener('click', () => resumeDialog.showModal());
+    document.querySelector('[data-resume-close]').addEventListener('click', () => resumeDialog.close());
+    resumeDialog.addEventListener('click', (event) => {
+      if (event.target === resumeDialog) resumeDialog.close();
+    });
+  </script>
 
 </body>
 
